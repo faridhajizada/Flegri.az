@@ -1,0 +1,53 @@
+.home-words-red {
+  color: #dd0103;
+  font-size: 80px;
+  line-height: 75px;
+}
+.home-words-white {
+  color: white;
+  font-size: 80px;
+  line-height: 75px;
+}
+.home-content {
+  padding: 90px 0 0 0;
+}
+
+#infinity-outline {
+  fill: transparent;
+  stroke-width: 4;
+  stroke: red;
+  stroke-dasharray: $len * 0.01, $len;
+  stroke-dashoffset: 0;
+  animation: anim $time linear infinite;
+}
+#infinity-bg {
+  fill: transparent;
+  stroke-width: 4;
+  stroke: #424242;
+  opacity: 0.2;
+}
+@keyframes anim {
+  12.5% {
+    stroke-dasharray: $len * 0.14, $len;
+    stroke-dashoffset: -$len * 0.11;
+  }
+  43.75% {
+    stroke-dasharray: $len * 0.35, $len;
+    stroke-dashoffset: -$len * 0.35;
+  }
+  100% {
+    stroke-dasharray: $len * 0.01, $len;
+    stroke-dashoffset: -$len * 0.99;
+  }
+}
+// .loading > svg {
+//   margin-left: auto;
+//   display: table;
+//   width: 40vw;
+//   height: 40vh;
+// }
+
+.loading svg{
+    display: flex;
+
+}
