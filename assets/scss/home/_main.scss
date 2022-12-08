@@ -1,53 +1,117 @@
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*  note vh and vw switched  */
+  width: 100vh;
+  height: 100vw;
+  /*    */
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100vh);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /*   scroll-snap-type: y mandatory; */
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+  transform-origin: top left;
+  transform: rotate(90deg) translateY(-100vh);
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  /*   scroll-snap-align: start; */
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 3rem;
+  /*  backface visibility keeps font from looking weird  */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 .home-words-red {
   color: #dd0103;
   font-size: 80px;
   line-height: 75px;
+  cursor: default;
 }
 .home-words-white {
   color: white;
   font-size: 80px;
   line-height: 75px;
+  cursor: default;
 }
-.home-content {
-  padding: 90px 0 0 0;
+// .home-content {
+//   padding: 90px 0 0 0;
+// }
+
+.loading svg {
+  width: 45vw;
+  height: 45vh;
 }
 
 #infinity-outline {
   fill: transparent;
   stroke-width: 4;
   stroke: red;
-  stroke-dasharray: $len * 0.01, $len;
+  stroke-dasharray: 3px, 300px;
   stroke-dashoffset: 0;
-  animation: anim $time linear infinite;
+  animation: anim 3000ms linear infinite;
 }
+
 #infinity-bg {
   fill: transparent;
   stroke-width: 4;
   stroke: #424242;
   opacity: 0.2;
 }
+
 @keyframes anim {
   12.5% {
-    stroke-dasharray: $len * 0.14, $len;
-    stroke-dashoffset: -$len * 0.11;
+    stroke-dasharray: 42px, 300px;
+    stroke-dashoffset: -33px;
   }
   43.75% {
-    stroke-dasharray: $len * 0.35, $len;
-    stroke-dashoffset: -$len * 0.35;
+    stroke-dasharray: 105px, 300px;
+    stroke-dashoffset: -105px;
   }
   100% {
-    stroke-dasharray: $len * 0.01, $len;
-    stroke-dashoffset: -$len * 0.99;
+    stroke-dasharray: 3px, 300px;
+    stroke-dashoffset: -297px;
   }
 }
-// .loading > svg {
-//   margin-left: auto;
-//   display: table;
-//   width: 40vw;
-//   height: 40vh;
-// }
-
-.loading svg{
-    display: flex;
-
+@media only screen and (max-width: 767px) {
+  .home-words-red {
+    font-size: 50px;
+    text-align: center;
+    line-height: 45px;
+  }
+  .home-words-white {
+    font-size: 50px;
+    text-align: center;
+    line-height: 45px;
+  }
+  .home-content {
+    padding: 0px 0 0 0;
+  }
+  .loading {
+    display: none;
+  }
 }
