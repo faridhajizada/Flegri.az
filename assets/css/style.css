@@ -209,7 +209,7 @@ section {
   display: block;
 }
 
-.main-about-us .top {
+.main-about-us .main-about-us-top {
   margin-top: 90px;
   font-size: 70px;
   text-align: center;
@@ -218,18 +218,18 @@ section {
   -webkit-text-stroke: 1px #ffffff;
   color: rgba(33, 33, 33, 0.479);
 }
-.main-about-us .main {
+.main-about-us .main-about-us-main {
   font-size: 25px;
   text-align: center;
   color: white;
-  margin-top: 50px;
+  margin-top: 30px;
   font-weight: 800;
 }
-.main-about-us .bottom {
+.main-about-us .main-about-us-bottom {
   font-size: 20px;
   text-align: center;
   color: white;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .main-about-us .main-about-us-button {
   display: flex;
@@ -247,14 +247,14 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
-  .main-about-us .top {
+  .main-about-us .main-about-us-top {
     font-size: 50px;
   }
-  .main-about-us .main {
+  .main-about-us .main-about-us-main {
     font-size: 19px;
     font-weight: 600;
   }
-  .main-about-us .bottom {
+  .main-about-us .main-about-us-bottom {
     font-size: 15px;
     margin-top: 30px;
   }
@@ -263,15 +263,15 @@ section {
   }
 }
 @media only screen and (max-width: 375px) {
-  .main-about-us .top {
+  .main-about-us .main-about-us-top {
     font-size: 50px;
   }
-  .main-about-us .main {
+  .main-about-us .main-about-us-main {
     font-size: 14px;
     font-weight: 600;
     margin-top: 10px;
   }
-  .main-about-us .bottom {
+  .main-about-us .main-about-us-bottom {
     font-size: 11px;
     margin-top: 10px;
   }
@@ -279,6 +279,41 @@ section {
     font-size: 15px;
   }
 }
+#six-page {
+  background: url(https://flegrei.ru/catalog/view/theme/default/image/parallax-bg10.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#six-page .main-contact-us-top {
+  color: #ffffff;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  cursor: default;
+}
+#six-page .main-contact-us-main {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat", Sans-serif;
+  cursor: default;
+}
+#six-page .main-contact-us-header {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  padding: 0% 20%;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-family: "Montserrat", Sans-serif;
+  cursor: default;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("/assets/fonts/icomoon.eot?gk0kdp");
