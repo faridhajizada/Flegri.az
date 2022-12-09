@@ -6,21 +6,21 @@
 
 .main-about-us {
   .top {
-margin-top: 100px;
-
+    margin-top: 90px;
     font-size: 70px;
     text-align: center;
     color: rgb(255, 0, 0);
     font-weight: 700;
     -webkit-text-stroke: 1px #ffffff;
-    color: rgba(33, 33, 33, 0.479);;
+    color: rgba(33, 33, 33, 0.479);
   }
 
   .main {
     font-size: 25px;
     text-align: center;
     color: white;
-    margin-top: 70px;
+    margin-top: 50px;
+    font-weight: 800;
   }
 
   .bottom {
@@ -29,4 +29,68 @@ margin-top: 100px;
     color: white;
     margin-top: 50px;
   }
+  .main-about-us-button {
+    display: flex;
+    justify-content: center;
+
+    button {
+      background-color: red;
+      border-radius: 20px;
+      margin-top: 30px;
+      font-size: 25px;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
 }
+
+@media only screen and (max-width: 600px) {
+  .main-about-us {
+    .top {
+      font-size: 50px;
+    }
+    .main {
+      font-size: 19px;
+      font-weight: 600;
+    }
+    .bottom {
+      font-size: 15px;
+      margin-top: 30px;
+    }
+
+    .main-about-us-button {
+      button {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main-about-us {
+    .top {
+      font-size: 50px;
+      //   margin-top: 50px;
+    }
+    .main {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    .bottom {
+      font-size: 11px;
+      margin-top: 10px;
+    }
+
+    .main-about-us-button {
+      button {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+
