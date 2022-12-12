@@ -67,6 +67,10 @@
   list-style: none;
   padding: 1rem 0;
   border-top: #d14a43 solid 1px;
+  margin-bottom: 0;
+}
+.footer-mobile .icons-footer a {
+  text-decoration: none;
 }
 .footer-mobile .icon {
   font-size: 30px;
@@ -94,7 +98,7 @@
   display: none;
 }
 
-main {
+.main {
   position: fixed;
   top: 0;
   left: 0;
@@ -118,7 +122,7 @@ article {
   transform: rotate(90deg) translateY(-100vh);
 }
 
-section {
+.section {
   width: 100vw;
   height: 100vh;
   /*   scroll-snap-align: start; */
@@ -344,6 +348,31 @@ section {
     margin-top: 30px;
   }
 }
+#contact-us-main {
+  margin-top: 10%;
+}
+#contact-us-main .container-fluid {
+  padding-right: var(--bs-gutter-x, 0rem);
+  padding-left: var(--bs-gutter-x, 0rem);
+}
+#contact-us-main .container-fluid .row {
+  --bs-gutter-x: 0rem;
+}
+#contact-us-main .contact-us-main-text {
+  padding: 80px 40px;
+}
+#contact-us-main .contact-us-main-text h5 {
+  text-align: center;
+  color: white;
+}
+#contact-us-main .contact-us-main-text p {
+  text-align: center;
+  color: white;
+}
+#contact-us-main .grey {
+  background-color: grey;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("/assets/fonts/icomoon.eot?gk0kdp");

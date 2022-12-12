@@ -21,7 +21,7 @@
 //   // left: 0;
 //   // z-index: 1;
 // }
-main {
+.main {
   position: fixed;
   top: 0;
   left: 0;
@@ -45,7 +45,7 @@ article {
   transform: rotate(90deg) translateY(-100vh);
 }
 
-section {
+.section {
   width: 100vw;
   height: 100vh;
   /*   scroll-snap-align: start; */
