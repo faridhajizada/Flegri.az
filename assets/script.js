@@ -840,3 +840,17 @@
 // const gl = canvas.getContext("webgl2");
 
 
+let a = 10;
+let b = 20;
+let c = 30;
+debugger;
+console.log(a+b+c);
+
+
+// let a = 10;
+// let b = 20;
+// let c = 30;
+// debugger;
+// console.log(a+b+c);
+
+
