@@ -840,11 +840,11 @@
 // const gl = canvas.getContext("webgl2");
 
 
-let a = 10;
-let b = 20;
-let c = 30;
-debugger;
-console.log(a+b+c);
+// let a = 10;
+// let b = 20;
+// let c = 30;
+// debugger;
+// console.log(a+b+c);
 
 
 // let a = 10;
@@ -854,3 +854,31 @@ console.log(a+b+c);
 // console.log(a+b+c);
 
 
+
+// function sam() {
+//     return 2,3+4
+    
+// }   
+
+// console.log(sam())
+
+// function sam() {
+//     return 2,3+4
+    
+// }   
+
+// console.log(sam())
+
+// function sam() {
+//     return 2,3+4
+    
+// }   
+
+// console.log(sam())
+
+// function sam() {
+//     return 2,3+4
+    
+// }   
+
+// console.log(sam())
